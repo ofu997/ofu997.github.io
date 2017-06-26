@@ -2,67 +2,128 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+       $('.popover-dismiss').popover({
+       trigger: 'focus'
+       })
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <title>My Portfolio</title>
   </head>
   <body>
 
-    <div id="topbox">
-      <h1 id="header">Oliver Fu </h1>
+<!-- NAVBAR -->
+<div id="navbar">
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse" style="background-color: #e3f2fd;">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Links">Links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Hobbies and Interests">Hobbies and Interests</a>
+        </li>
+      </ul>
     </div>
-    <hr>
+  </nav>
+</div>
+<!-- END NAVBAR -->
 
-    <div class="content">
-      <h3>Why Programming?</h3>
-      <p>I'm interested in how data is collected, stored, and displayed. Please take a look at my summary below, and I hope to hear back from you!</p>
-    </div>
-    <hr>
-    <!-- container for 3 columns -->
-    <div class="maincontentcontainer">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="content">
-                <h3>Skills</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
-              <hr>
-            </div>
-            <div class="col-md-3">
-              <div class="content">
-                <h3>Links</h3>
-                <a href="https://www.linkedin.com/in/oliverfu" target="_blank"><img src="./img/linkedinlogo.jpg" alt="linkedin" class="logos"></a>
-                <br>
-                <br>
-                <br>
-                <a href="https://github.com/ofu997" target="_blank"><img src="./img/githublogo.png" alt="github" class="logos"></a>
-                <br>
-                <br>
-                <a href="https://www.facebook.com/oliver.fu" target="_blank"><img src="./img/facebooklogo.svg" alt="facebook" class="logos"></a>
-              </div>
-              <hr>
-            </div>
-            <div class="col-md-3">
-              <div class="content">
-                <h3>Hobbies and Interests</h3>
-                <ul>
-                  <li>Watching new and second-run movies</li>
-                  <li>Hiking</li>
-                  <li>Tennis</li>
-                  <li>Traveling</li>
-                  <li>Non-fiction reading</li>
-                </ul>
-              </div>
-              <hr>
-            </div>
-          </div>
-      </div>
-    </div>
+<div id="topbox">
+  <h1 id="header">Oliver Fu </h1>
+</div>
+<div id="belowtopbox">
+  <h3>Why Programming?</h3>
+  <p>I'm interested in web development and how data is collected, stored, and displayed. Please take a look at my summary below, and I hope to hear back from you!</p>
+</div>
 
-  </body>
+<div id="contains-sections">
+  <div class="sections" id="Skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </div>
+  <div class="sections" id="Links">
+    <h3>Links</h3>
+    <a href="https://www.linkedin.com/in/oliverfu" target="_blank"><img src="./img/linkedinlogo.jpg" alt="linkedin" class="logos"></a>
+    <br>
+    <br>
+    <br>
+    <a href="https://github.com/ofu997" target="_blank"><img src="./img/githublogo.png" alt="github" class="logos"></a>
+    <br>
+    <br>
+    <a href="https://www.facebook.com/oliver.fu" target="_blank"><img src="./img/facebooklogo.svg" alt="facebook" class="logos"></a>
+  </div>
+  <div class="sections" id="Hobbies and Interests">
+    <h3>Hobbies and Interests</h3>
+    <ul>
+      <li >Watching new and second-run movies</li>
+      <li >Hiking</li>
+      <li >Tennis</li>
+      <li >Traveling</li>
+      <li >Non-fiction reading</li>
+    </ul>
+  </div>
+</div>
+
+<!-- START button -->
+     <div id="modalbutton">
+      <button type="button" name="button" data-toggle="modal" data-target="#contactme" class="btn btn-success">Contact me </button>
+     </div>
+ <!-- END button -->
+
+ <!-- form modal -->
+ <div class="modal fade" id="contactme">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Contact me directly here</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <form class="" action="" method="">
+           <fieldset>
+             <label for="firstname">First name:</label>
+             <input type="text" name="" value="" class="form-control" id="firstname" placeholder="First name...">
+           </fieldset>
+           <fieldset>
+             <label for="lastname">Last name:</label>
+             <input type="text" name="" value="" class="form-control" id="lastname" placeholder="Last name...">
+           </fieldset>
+           <fieldset>
+             <label for="email">Email</label>
+             <input type="text" name="" value="" class="form-control" id="email" placeholder="Email ...">
+           </fieldset>
+           <fieldset>
+             <label for="password">Your message:</label>
+             <input type="text" name="" value="" class="form-control" id="password" placeholder="Message content here ...">
+           </fieldset>
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-primary">Save</button>
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- end form modal -->
+</body>
 </html>
