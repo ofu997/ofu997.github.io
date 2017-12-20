@@ -1,0 +1,33 @@
+#containform{
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+body{
+  background-image: url("../img/pizzaback.jpg");
+  background-size: 100% 105%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+label{
+  font-weight: bold;
+  font-size: 20px;
+  color: 	#F0FFFF;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1,h2,h3,p{
+  font-family: sans-serif;
+  color: 	#F0E68C;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0  black, 0 -1px  black;
+}
+p{
+  font-size: 20px;
+}
+
+#modal {
+  color: black;
+}
