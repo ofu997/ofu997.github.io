@@ -1,36 +1,21 @@
 #bodyIndex{
-  background: url("../img/backgroundBlackhole.jpg");
+  background: url("../img/backgroundSpace.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 #topbox{
-  /*border-width: 5px;*/
-  /*align-content: center;*/
-  width: 100%;
-  height: 100px;
-  /*border: 5px white;*/
-  /*border: 2px #595959;*/
-  /*
-  border: 4px #1d2099;
-  border-radius: 10px 20px;
-  border-style: outset;
-  */
-  /*box-shadow: -5px -5px  5px #888888;*/
-  /*margin-top: 15px;
-  margin-bottm: 15px;
-  margin-left: 75px;*/
+
+  height: 200px;
   margin: auto;
-  margin-top: 75px;
-  padding-bottom: 33px;
-  padding-top: 2px;
-  padding-left: 30px;
-  letter-spacing: 2px;
-  /*background-image: url("../img/header.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  margin-top: 70px;
+  width: 30%;
+  height: 100px;
+  /*
+  border: 3px solid #73AD21;
   */
+  text-align: center;
 }
 
 #header{
@@ -53,29 +38,33 @@
   color: white;
 }
 
-#belowtopbox{
+#indexMainContent{
   border-radius: 5px;
-  border: 5px white;
-  margin: 20px 800px 0px 30px;
-  position: left;
+  /*
+  border: 3px solid #73AD21;
+  */
+  display: block;
+  margin: auto;
+
   /*
   font-size: 0.9em;
   text-shadow: 5px black;
   */
 }
 
+#indexMainContent img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 40px;
+  width: 400px;
+}
 
 .PageHeadline{
   font-family: Courier;
   font-weight: bold;
   text-shadow: 1px 1px 3px #ff0000;
   color:#f2fffa;
-}
-
-
-#me{
-  border-radius: 40px;
-  width: 200px;
+  padding-left: 0px;
 }
 
 .introp{
@@ -83,18 +72,107 @@
   color:#f5f5f5;
   letter-spacing: 0.5px;
   font-weight: 500;
-  /*#d3e8ff*/
-  /*#002349*/
   text-shadow: 0 0 0.5em #4c657f, 0 0 0.5em #4c657f, 0 0 0.5em #4c657f;
   size: 55px;
 }
 
+.centerThisText{
+  text-align: center;
+  vertical-align: middle;
+}
+
 /*
-#belowtopbox p{
-  font-size: 1.3em;
-  width: 33%;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 */
+#introText a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+#introText a:hover {
+  color: #ffb280;
+}
+
+#introText ul {
+  display: inline-block;
+}
+
+.date {
+  position: relative;
+}
+
+.date div {
+  /*visiblity: hidden; */
+
+  display: none;
+  position: absolute;
+  top: 0;
+  left:100%;
+  margin-top: -30px; /* approx adjustment for arrow */
+  margin-left: 25px; /* approx adjustment for arrow */
+  margin-right: 150px;
+}
+
+.date a:hover + div {
+  cursor: pointer;
+  display: block;
+  /*visibility: visible; */
+  width: 300px;
+  line-height: 20px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: left;
+  z-index: 999;
+  color: rgb(113, 157, 171);
+  background: rgb(255, 255, 255);
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
+  box-shadow: #333 -4px 4px 16px 2px;
+  -webkit-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.date div:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #FFFFFF transparent transparent;
+  top: 22px;
+  left: -23px;
+}
+
+ul{
+  list-style-type: none;
+}
 
 .logos{
   max-width: 100px;
@@ -143,12 +221,9 @@
 
 #projectsContent{
   width: 90%;
-
-  margin: 75px 550px 0px 30px;
+  margin: 75px 550px 0px 100px;
   /*margin: 75px 350px 0px 20px;*/
   padding-bottom: 33px;
-
-
   letter-spacing: 2px;
 }
 
@@ -157,6 +232,13 @@
   width: 700px;
 }
 
+#skillsBox{
+  margin-top: 100px;
+}
+
+#columnsOfSkills{
+  padding-top: 50px;
+}
 
 #bodyProjects{
   background-image: url("../img/ghost-tile.gif");
