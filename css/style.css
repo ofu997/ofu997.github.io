@@ -81,31 +81,6 @@
   vertical-align: middle;
 }
 
-/*
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-*/
 #introText a {
   color: #ff6600;
   text-decoration: none;
@@ -129,7 +104,7 @@
   display: none;
   position: absolute;
   top: 0;
-  left:100%;
+  left:30%;
   margin-top: -30px; /* approx adjustment for arrow */
   margin-left: 25px; /* approx adjustment for arrow */
   margin-right: 150px;
@@ -156,6 +131,7 @@
   -moz-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
   pointer-events: none;
+
 }
 
 .date div:after {
@@ -238,6 +214,7 @@ ul{
 
 #columnsOfSkills{
   padding-top: 50px;
+  margin-left: 200px;
 }
 
 #bodyProjects{
@@ -294,44 +271,3 @@ ul{
  margin: 20px;
 
 }
-
-
-
-/*Determine how text looks*/
-/*e.g.:skills*/
-/*.content p {
-  color: #e6e6e6;
-  margin-top: 15px;
-}*/
-/*e.g.: html, css*/
-/*.content ul {
-  color: #e6e6e6;
-  margin-top: 15px;
-}*/
-/*
-.content li{
-  list-style-type: circle;
-}*/
-
-/*.content h3{
-  color:#e6e6e6;
-  margin-top: 15px;
-  font-size: 1.3em;
-}*/
-/*End of determine how text looks*/
-/*p{
-  color: #e6e6e6;
-}*/
-/*.maincontentcontainer{
-  margin: auto;
-  width: 90%;
-  padding: 10px;
-}
-
-.col-md-3{
-  border-radius: 10px;
-  border: 2px #595959;
-  border-style: outset;
-  margin-left: 20px;
-  margin-right: 20px;
-}*/
