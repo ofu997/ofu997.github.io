@@ -60,9 +60,10 @@
 }
 
 .PageHeadline{
+  color: #e8e8e8;
   font-family: Courier;
   font-weight: bold;
-  text-shadow: 2px 2px 6px #ff00ff;
+  text-shadow: 2px 2px 6px #00ffff;
   color:#f2fffa;
   padding-left: 0px;
 }
