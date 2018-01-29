@@ -64,7 +64,9 @@
   font-family: Courier;
   font-weight: bold;
   text-shadow: 2px 2px 6px #00ffff;
+  /*
   color:#f2fffa;
+  */
   padding-left: 0px;
 }
 
@@ -215,6 +217,10 @@ ul{
   margin-top: 100px;
 }
 
+#liveProjectBox{
+  margin-top: 100px;
+}
+
 #columnsOfSkills{
   padding-top: 50px;
   margin-left: 200px;
@@ -289,7 +295,7 @@ ul{
   /*
   box-shadow: 0 0 0.8em #4c657f, 0 0 0.8em #4c657f, 0 0 0.8em #4c657f;
   */
-  box-shadow: 0 0 0.6em #00ff00, 0 0 0.6em #00ff00, 0 0 0.6em #00ff00;
+  box-shadow: 0 0 0.6em #0033ff, 0 0 0.6em #0033ff, 0 0 0.6em #0033ff;
   /*3px 3px 9px #00ff00;
   */
   /*
