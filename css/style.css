@@ -1,10 +1,24 @@
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
 #bodyIndex{
-  background: url("../img/backgroundSpace.jpg");
+  background-image: url("../img/backgroundSpace.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+}
+
+#bodySkills{
+  background-image: url("../img/clouds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#bodyProjects{
+  background-image: url("../img/darkWebbyBackground.jpg");
+
+  background-repeat: repeat;
+
 }
 
 #topbox{
@@ -229,12 +243,7 @@ ul{
 
 }
 
-#bodyProjects{
-  background-image: url("../img/ghost-tile.gif");
 
-  background-repeat: repeat;
-
-}
 
 #bodyContact{
   background-color: black;
@@ -277,11 +286,9 @@ ul{
 }
 
 #icons i{
-
  display:inline-block;
  vertical-align: middle;
  margin: 20px;
-
 }
 
 .photo {
@@ -325,8 +332,8 @@ ul{
   max-width: 100%;
   /*
   max-height: 100%;
-  */
-  max-height: 265px;
+
+  max-height: 265px; max height taken out for carousel purpose
 
 
   /*
