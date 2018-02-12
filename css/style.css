@@ -1,13 +1,13 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-#bodyIndex{
-  background-image: url("../img/backgroundSpace.jpg");
+#bodySkills{
+  background-image: url("../img/mainBackground.jpg")
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 
-#bodySkills{
+#mainBackground{
   background-image: url("../img/clouds.jpg");
   background-size: cover;
   background-repeat: no-repeat;
