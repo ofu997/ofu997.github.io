@@ -1,24 +1,23 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-
-/*
-#mainBackground{
-  background-image:url("../img/backgroundSpace.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  height:500px;
-  width: 100%;
-}
-*/
-#mainBackground{
-  height:450px;
+#test{
+  height: 1000px;
   background-image: url("../img/darkWebbyBackground.jpg");
+  background-repeat: repeat;
 }
 
-#intro{
-  height:520px;
-  background-image: url("../img/darkWebbyBackground.jpg");
+#bodyIntro{
+  height:700px;
+
+  background-image: url("../img/backgroundSunset.jpeg");
+  background-size: 100% 700px;
+
+}
+
+#bodySkills{
+  height:800px;
+  background-image: url("../img/backgroundSpace.jpg");
+  background-height: 100%;
 }
 
 #bodyProjects{
@@ -29,14 +28,15 @@
 
 }
 
-#bodySkills{
-  height:600px;
-  background-image: url("../img/darkWebbyBackground.jpg");
-}
-
 #bodyContact{
   height:600px;
   background-color: black;
+
+}
+
+#bodyContact img{
+  margin-top: -100px;
+  size: 100px 100px;
 }
 
 #mySkillsMargin{
@@ -54,6 +54,7 @@
   border: 3px solid #73AD21;
   */
   text-align: center;
+  border: 5px yellow;
 }
 
 .header{
@@ -81,6 +82,7 @@
   /*
   border: 3px solid #73AD21;
   */
+  border: 5px yellow;
   display: block;
   margin: auto;
 
@@ -97,15 +99,22 @@
   width: 400px;
 }
 
-#indexMainContent p{
-
-}
-
 .PageHeadline{
   color: #e8e8e8;
   font-family: Courier;
   font-weight: bold;
   text-shadow: 2px 2px 6px #00ffff;
+  /*
+  color:#f2fffa;
+  */
+  padding-left: 0px;
+}
+
+.sectionHeadline{
+  color: #e8e8e8;
+  font-family: Courier;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px gold;
   /*
   color:#f2fffa;
   */
