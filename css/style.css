@@ -1,31 +1,53 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-#bodySkills{
-  background-image: url("../img/mainBackground.jpg")
+
+/*
+#mainBackground{
+  background-image:url("../img/backgroundSpace.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  height:500px;
+  width: 100%;
+}
+*/
+#mainBackground{
+  height:450px;
+  background-image: url("../img/darkWebbyBackground.jpg");
 }
 
-#mainBackground{
-  background-image: url("../img/clouds.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+#intro{
+  height:520px;
+  background-image: url("../img/darkWebbyBackground.jpg");
 }
 
 #bodyProjects{
+  height: 750px;
   background-image: url("../img/darkWebbyBackground.jpg");
-
+  margin-top: 0px;
   background-repeat: repeat;
 
+}
+
+#bodySkills{
+  height:600px;
+  background-image: url("../img/darkWebbyBackground.jpg");
+}
+
+#bodyContact{
+  height:600px;
+  background-color: black;
+}
+
+#mySkillsMargin{
+  margin-top: 100px;
 }
 
 #topbox{
 
   height: 200px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 0px;
   width: 30%;
   height: 100px;
   /*
@@ -34,7 +56,7 @@
   text-align: center;
 }
 
-#header{
+.header{
   padding-top: 10px;
   color: #e8e8e8;
   font-family: 'Anton', 'Courier', sans-serif;
@@ -47,7 +69,7 @@
 #navbar{
   font-family: 'Anton','Courier', sans-serif;
   text: white;
-  margin-bottom: 22px;
+  margin-bottom: 0px;
 }
 
 .navlink{
@@ -73,6 +95,10 @@
   margin: 0 auto;
   border-radius: 40px;
   width: 400px;
+}
+
+#indexMainContent p{
+
 }
 
 .PageHeadline{
@@ -230,7 +256,7 @@ ul{
 }
 
 #skillsBox{
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 #liveProjectBox{
@@ -244,10 +270,6 @@ ul{
 }
 
 
-
-#bodyContact{
-  background-color: black;
-}
 
 #cube {
   padding-top: 100px;
@@ -403,4 +425,14 @@ article a, article p{
   display: block;
   margin-bottom: 20px;
   margin-top: 30px;
+}
+
+
+#projectsTitle{
+  margin-top: 240px;
+}
+
+
+#carouselMargin{
+  margin-top: 250px;
 }
