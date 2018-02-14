@@ -21,7 +21,7 @@
 }
 
 #bodyProjects{
-  height: 750px;
+  height: 850px;
   background-image: url("../img/darkWebbyBackground.jpg");
   margin-top: 0px;
   background-repeat: repeat;
@@ -29,7 +29,7 @@
 }
 
 #bodyContact{
-  height:600px;
+  height:650px;
   background-color: black;
 
 }
@@ -347,8 +347,8 @@ ul{
 .photo-container {
 	text-align: center;
 	margin: 15px auto;
-	width: 400px;
-  height: 285px;
+	width: 550px;
+  height: 392px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
