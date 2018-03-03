@@ -259,17 +259,21 @@ ul{
 
 
 #projectsContent{
+  background-image: url("../img/darkWebbyBackground.jpg");
+
   width: 90%;
   margin: auto;
   /*margin: 75px 350px 0px 20px;*/
   padding-bottom: 33px;
   letter-spacing: 2px;
+
 }
 
-
+/*
 #projectsContent img{
   width: 700px;
 }
+*/
 
 #skillsBox{
   margin-top: 0px;
