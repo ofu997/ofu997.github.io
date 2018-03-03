@@ -6,21 +6,20 @@
   background-repeat: repeat;
 }
 
-#bodyIntro{
+#Intro{
   height:700px;
 
   background-image: url("../img/backgroundSunset.jpeg");
   background-size: 100% 700px;
-
 }
 
-#bodySkills{
+#Skills{
   height:800px;
   background-image: url("../img/backgroundSpace.jpg");
   background-height: 100%;
 }
 
-#bodyProjects{
+#Projects{
   height: 850px;
   background-image: url("../img/darkWebbyBackground.jpg");
   margin-top: 0px;
@@ -28,13 +27,13 @@
 
 }
 
-#bodyContact{
+#Contact{
   height:650px;
   background-color: black;
 
 }
 
-#bodyContact img{
+#Contact img{
   margin-top: -100px;
   size: 100px 100px;
 }
@@ -44,10 +43,13 @@
 }
 
 #topbox{
-
   height: 200px;
+  padding-top: 50px;
   margin: auto;
-  margin-top: 0px;
+  
+  /*
+  margin-top: 50px;
+  */
   width: 30%;
   height: 100px;
   /*
@@ -78,6 +80,7 @@
 }
 
 #indexMainContent{
+  padding-top: 50px;
   border-radius: 5px;
   /*
   border: 3px solid #73AD21;
@@ -92,7 +95,11 @@
   */
 }
 
+
+
 #indexMainContent img{
+  margin-top: 50px;
+  align-content: center;
   display: block;
   margin: 0 auto;
   border-radius: 40px;
