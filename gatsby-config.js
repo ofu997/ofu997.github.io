@@ -16,13 +16,13 @@ module.exports = {
     //   },
     // },
     // `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         name: 'project',
-        path: `./src/data/`,
+        path: `./data/`,
     //     name: `gatsby-starter-default`,
     //     short_name: `starter`,
     //     start_url: `/`,
