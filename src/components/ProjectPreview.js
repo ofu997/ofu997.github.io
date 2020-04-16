@@ -6,7 +6,7 @@ const ProjectPreview = ({ slug, title, description, imageData }) =>
   <div className='project-preview'>
     <Link to={ `/${ slug }/` }>
       <Image fluid={ imageData } alt={ title } />
-    
+    </Link>
       <h2>
       <Link to={ `/${ slug }/` }>{ title }</Link>
       </h2>
@@ -14,7 +14,6 @@ const ProjectPreview = ({ slug, title, description, imageData }) =>
       <p>
         <Link to={ `/${ slug }/` }>View this project</Link>
       </p>
-    </Link>
   </div>
 
 export default ProjectPreview;
