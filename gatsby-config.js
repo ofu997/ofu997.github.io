@@ -15,7 +15,6 @@ module.exports = {
     //     // path: './data',
     //   },
     // },
-    // `gatsby-transformer-sharp`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
