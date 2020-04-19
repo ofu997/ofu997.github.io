@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
+  /* font-family: 'Segoe UI', Tahoma; */
+  margin: 0;
+}
+
+body {
+  font-size: 22px;
+  background: #fff5ee;
+}
+
+.header {
+  /* background-color: blue; */
+  /* background-color: #003427; */
+  background-color: #556b2f;
+  padding: 1rem;
+  /* border-radius: 0% 0% 10% 10%; */
+  /* box-shadow: 5px 5px#ededed; */
+  font-family: 'Segoe UI', Tahoma;
+  box-shadow: 10px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 #aab597;
+}
+
+.header a {
+  color: white;
+  /* font-weight: 700; */
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem auto;
+  max-width: 90%;
+  width: 57ch;
+}
+
+/* Project Sections */
+
+.project-preview {
+  margin-bottom: 2rem;
+  width: 100%;
+  /* box-shadow: 5px 5px grey; */
+  box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* margin: 0px 20px; */
+  /* padding: 20px; */
+  padding: 5%;
+  /* font-family: 'Lucida Console', Monaco, monospace;  */
+  font-family: sans-serif; 
+}
+
+@media (min-width: 600px) {
+  .project-preview {
+    flex: 1 50%;
+    /* max-width: calc(50% - 0.5rem); */
+    max-width: calc(50% - 1.0rem);
+  }
+}
+
+.project-preview h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.project-preview h2 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.project-preview p {
+  margin-top: 0.5rem;
+  font-size: 1.00rem;
+}
+
+/* Generated Pages */
+.project {
+  width: 100%;
+
+  padding: 5% 25%;
+  font-family: sans-serif; 
+}
+
+.project h3,
+.project img,
+.project p {
+  margin-top: 1rem;
+}
+
+.project ul {
+  margin-top: 0.5rem;
+}
