@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-
+// 2nd component on index.js
 const ProjectPreview = ({ slug, title, description, imageData }) => 
   <div className='project-preview'>
     <Link to={ `/${ slug }/` }>
