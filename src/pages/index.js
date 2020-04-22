@@ -12,6 +12,7 @@ export default () => {
           slug
           title
           url
+          shortDescription
           description
           image {
             childImageSharp {
@@ -33,14 +34,13 @@ export default () => {
       { 
         projects.map(({ node: project }) => {
           const { title } = project;
-          const { description } = project; 
+          const { shortDescription } = project; 
           const { slug } = project;
           const imageData = project.image.childImageSharp.fluid; 
-          
           return (
             <ProjectPreview 
               title={ title }
-              description={ description }
+              shortDescription={ shortDescription }
               imageData={ imageData }
               slug={ slug }
               key={ title }
@@ -50,6 +50,7 @@ export default () => {
       }
     </Layout>
   )
+
 }
 
 // index uses components/ProjectPreview to show project sections

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-// 2nd component on index.js
-const ProjectPreview = ({ slug, title, description, imageData }) => 
+
+const ProjectPreview = ({ slug, title, shortDescription, imageData }) => 
   <div className='project-preview'>
     <Link to={ `/${ slug }/` }>
       <Image fluid={ imageData } alt={ title } />
@@ -10,7 +10,7 @@ const ProjectPreview = ({ slug, title, description, imageData }) =>
       <h2>
       <Link to={ `/${ slug }/` }>{ title }</Link>
       </h2>
-      <p>{ description }</p>
+      <p>{ shortDescription }</p>
       <p>
         <Link to={ `/${ slug }/` }>View this project</Link>
       </p>

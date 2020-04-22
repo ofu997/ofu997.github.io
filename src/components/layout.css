@@ -11,15 +11,37 @@ body {
   background: #fff5ee;
 }
 
+.HeaderFont {
+  font-family: sans-serif;
+  font-weight: 300;
+  color: lightblue;
+  text-shadow: 0px 0px 3px navy;
+}
+
+.SectionFont {
+  font-family: 'Segoe UI', Tahoma;
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.SectionSpacing {
+  margin-left: 2%;;
+}
+
+.SectionPadding {
+  padding: 2%;
+  background-color: darkolivegreen;
+}
+
 .header {
   /* background-color: blue; */
   /* background-color: #003427; */
   background-color: #556b2f;
-  padding: 1rem;
+  padding: 0.5rem;
   /* border-radius: 0% 0% 10% 10%; */
   /* box-shadow: 5px 5px#ededed; */
-  font-family: 'Segoe UI', Tahoma;
-  box-shadow: 10px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 #aab597;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2), 15px 5px 5px 0 #c3cbb6;
 }
 
 .header a {
