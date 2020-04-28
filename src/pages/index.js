@@ -20,7 +20,14 @@ export default () => {
                 ...GatsbyImageSharpFluid
               }
             }
-          } 
+          }
+          secondImage {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }            
+          }
         }
       }
     }
@@ -33,15 +40,15 @@ export default () => {
     <Layout>
       { 
         projects.map(({ node: project }) => {
-          const { title } = project;
-          const { shortDescription } = project; 
-          const { slug } = project;
+          const { title, shortDescription, slug } = project;
           const imageData = project.image.childImageSharp.fluid; 
+          const secondImageData = project.secondImage.childImageSharp.fluid;           
           return (
             <ProjectPreview 
               title={ title }
               shortDescription={ shortDescription }
               imageData={ imageData }
+              secondImageData={ secondImageData }
               slug={ slug }
               key={ title }
             />
@@ -54,6 +61,6 @@ export default () => {
 }
 
 // index uses components/ProjectPreview to show project sections
-// gatsby-node uses templates/ProjectTemplate, which uses components/project to show project section
+// gatsby-node uses templates/ProjectTemplate, which uses components/project to show project page
 
 

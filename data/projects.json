@@ -4,6 +4,7 @@
     "slug":"project 1",
     "url":"https://example.org",
     "image": "./images/homepage.png",
+    "secondImage":"./images/sort-nations.png",
     "shortDescription":"short description here",
     "description":"description: homepage"
   },
@@ -12,6 +13,7 @@
     "slug":"project 2",
     "url":"https://wikipedia.com",
     "image": "./images/sort-nations.png",
+    "secondImage": "./images/track-by-states.png",
     "shortDescription":"short description here",
     "description": "Gravida dui non cum quam quis, proin praesent taciti cras nulla hendrerit arcu Urna vulputate inceptos blandit vehicula. Ligula. Vivamus vel justo iaculis Nascetur semper maecenas dolor elementum risus velit odio taciti mauris natoque. Eleifend porta laoreet vitae mauris consectetuer, consequat scelerisque litora tortor nunc viverra odio ligula tortor risus id risus purus. Montes potenti libero mauris. Suscipit. Aptent. Ante pede primis ad conubia turpis lacinia non etiam dis purus potenti pede. Auctor lacinia lobortis adipiscing auctor placerat. Sociis semper ut. Quam, faucibus duis libero suspendisse. Cubilia nonummy fusce tempor orci nisi platea fermentum accumsan torquent suspendisse commodo. Parturient justo."
   }
