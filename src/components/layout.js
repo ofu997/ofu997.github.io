@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import './layout.css' 
+import './layout.css';
 
 const Layout = ({ children }) => 
   <div>
@@ -8,7 +7,7 @@ const Layout = ({ children }) =>
     <h1 className='HeaderFont'>
     Looking for a web/software developer? 
     </h1>
-    <p>I'm a programmer based on the West Coast. I believe in providing value through problem solving, design, and making features come to life.</p>
+    <p>I'm a programmer based on the West Coast. I can provide value through problem solving, design, and making features come to life.</p>
     <React.Fragment>
       <header className='header SectionFont'>    
         Projects
