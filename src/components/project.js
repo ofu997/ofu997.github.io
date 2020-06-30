@@ -6,7 +6,7 @@ const Project = ({ title, description, url, secondImageData }) => {
   <div className='project'>
     <h1>{ title }</h1>
     <div style={{display: "flex"}}>
-      <Image fluid={ secondImageData } alt={ title } style={{ minWidth: '55%' }} />
+      <Image fluid={ secondImageData } alt={ title } style={{ minWidth: '55%', minHeight: '55%' }} />
       <p style={{ marginLeft: '5%'}}>{ description }</p>
     </div>
       <p>
