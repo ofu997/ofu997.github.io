@@ -1,9 +1,9 @@
-import React from 'react';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
+import React from 'react';
 
 const ProjectPreview = ({ slug, title, shortDescription, imageData }) => 
-  <div className='project-preview'>
+  <div className='project-preview project-container'>
     <Link to={ `/${ slug }/` }>
       <Image fluid={ imageData } alt={ title } />
     </Link>

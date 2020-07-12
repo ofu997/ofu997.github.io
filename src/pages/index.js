@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby";
-import Layout from "../components/layout"
-import ProjectPreview from '../components/ProjectPreview'; 
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
+import Layout from "../components/layout";
+import ProjectPreview from '../components/ProjectPreview';
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -38,23 +38,34 @@ export default () => {
 
   return (
     <Layout>
-      { 
-        projects.map(({ node: project }) => {
-          const { title, shortDescription, slug } = project;
-          const imageData = project.image.childImageSharp.fluid; 
-          const secondImageData = project.secondImage.childImageSharp.fluid;           
-          return (
-            <ProjectPreview 
-              title={ title }
-              shortDescription={ shortDescription }
-              imageData={ imageData }
-              secondImageData={ secondImageData }
-              slug={ slug }
-              key={ title }
-            />
-          )
-        })
-      }
+      <div 
+        style={{ 
+          display: 'flex', 
+          justifyContent: 'space-around', 
+          flexWrap: 'wrap-reverse', 
+          flexDirection: 'row-reverse',
+          margin: '0 auto',
+          width: '100%',
+        }}
+      >
+        { 
+          projects.map(({ node: project }) => {
+            const { title, shortDescription, slug } = project;
+            const imageData = project.image.childImageSharp.fluid; 
+            const secondImageData = project.secondImage.childImageSharp.fluid;           
+            return (
+              <ProjectPreview 
+                title={ title }
+                shortDescription={ shortDescription }
+                imageData={ imageData }
+                secondImageData={ secondImageData }
+                slug={ slug }
+                key={ title }
+              />
+            )
+          })
+        }
+      </div>
     </Layout>
   )
 

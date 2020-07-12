@@ -1,21 +1,38 @@
 [
   {
-    "title":"first project",
-    "slug":"project 1",
-    "url":"https://example.org",
-    "image": "./images/homepage.png",
-    "secondImage":"./images/sort-nations.png",
-    "shortDescription":"short description here",
-    "description":"description: homepage"
+    "title":"The Digital Curator",
+    "slug":"the-digital-curator",
+    "url":"https://thedigitalcurator.azurewebsites.net",
+    "image": "./images/digitalcuratorHomepage.png",
+    "secondImage": "./images/digitalcuratorPost.png",
+    "shortDescription":"A book listing site and blog",
+    "description": "I was inspired to create this in order to store information that I frequently refer back to, and to list books I found interesting. This site allows contributions from logged-in users and is connected to two different databases."
+  },  
+  {
+    "title":"Hacker News Reader",
+    "slug":"hacker-news-reader",
+    "url":"https://hackernews-reader.netlify.app",
+    "image":"./images/hackernewsHomepage.png",
+    "secondImage":"./images/hackernewsSort.png",
+    "shortDescription":"Searches and sorts articles from Hacker News",
+    "description":"Searches and displays articles by pulling data from API endpoints. Also allows sorting of articles by article properties."
   },
   {
-    "title":"second project",
-    "slug":"project 2",
-    "url":"https://wikipedia.com",
-    "image": "./images/sort-nations.png",
-    "secondImage": "./images/track-by-states.png",
-    "shortDescription":"short description here",
-    "description": "Gravida dui non cum quam quis, proin praesent taciti cras nulla hendrerit arcu Urna vulputate inceptos blandit vehicula. Ligula. Vivamus vel justo iaculis Nascetur semper maecenas dolor elementum risus velit odio taciti mauris natoque. Eleifend porta laoreet vitae mauris consectetuer, consequat scelerisque litora tortor nunc viverra odio ligula tortor risus id risus purus. Montes potenti libero mauris. Suscipit. Aptent. Ante pede primis ad conubia turpis lacinia non etiam dis purus potenti pede. Auctor lacinia lobortis adipiscing auctor placerat. Sociis semper ut. Quam, faucibus duis libero suspendisse. Cubilia nonummy fusce tempor orci nisi platea fermentum accumsan torquent suspendisse commodo. Parturient justo."
+    "title":"Virus Visualizer",
+    "slug":"virus-visualizer",
+    "url":"https:virusvisualizer.netlify.app",
+    "image": "./images/track-nations.png",
+    "secondImage":"./images/sort-nations.png",
+    "shortDescription":"Tracks and sorts the viral outbreak",
+    "description":"This website allows users to view the viral outbreak through charts. Users can search states and nations and sort by total or daily cases. They can also view public health resources for each state and see relevant news."
+  },
+  {
+    "title":"Item Lister",
+    "slug":"item-lister",
+    "url":"https://bit.ly/2XosUMF",
+    "image":"./images/itemlisterHomepage.png",
+    "secondImage":"./images/itemlisterMap.png",
+    "shortDescription":"An app for sharing and mapping moments and photos",
+    "description":"This mobile app was built with Flutter and Dart and includes many user-facing capabilities, including logging in, photo storage, geocoding. Users can post and save anything that is of interest to them."
   }
 ]
-
