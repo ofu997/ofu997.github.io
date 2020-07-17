@@ -8,9 +8,11 @@ const ProjectPreview = ({ slug, title, shortDescription, imageData }) =>
       <Image fluid={ imageData } alt={ title } />
     </Link>
       <h2>
-      <Link to={ `/${ slug }/` }>{ title }</Link>
+        <Link to={ `/${ slug }/` }>{ title }</Link>
       </h2>
-      <p>{ shortDescription }</p>
+      <p>
+        { shortDescription }
+      </p>
       <p>
         <Link to={ `/${ slug }/` }>View this project</Link>
       </p>

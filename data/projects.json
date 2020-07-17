@@ -5,8 +5,8 @@
     "url":"https://thedigitalcurator.azurewebsites.net",
     "image": "./images/digitalcuratorHomepage.png",
     "secondImage": "./images/digitalcuratorPost.png",
-    "shortDescription":"A book listing site and blog",
-    "description": "I was inspired to create this in order to store information that I frequently refer back to, and to list books I found interesting. This site allows contributions from logged-in users and is connected to two different databases."
+    "shortDescription":"A book-listing site and blog",
+    "description": "I was inspired to create this in order to store information that I frequently refer back to, and to list books I find interesting. This site allows contributions from logged-in users and is connected to two different databases."
   },  
   {
     "title":"Hacker News Reader",
@@ -20,7 +20,7 @@
   {
     "title":"Virus Visualizer",
     "slug":"virus-visualizer",
-    "url":"https:virusvisualizer.netlify.app",
+    "url":"https://virusvisualizer.netlify.app",
     "image": "./images/track-nations.png",
     "secondImage":"./images/sort-nations.png",
     "shortDescription":"Tracks and sorts the viral outbreak",
@@ -33,6 +33,6 @@
     "image":"./images/itemlisterHomepage.png",
     "secondImage":"./images/itemlisterMap.png",
     "shortDescription":"An app for sharing and mapping moments and photos",
-    "description":"This mobile app was built with Flutter and Dart and includes many user-facing capabilities, including logging in, photo storage, geocoding. Users can post and save anything that is of interest to them."
+    "description":"This mobile app was built with Flutter and Dart and includes many user-facing capabilities, including logging in, photo storage, and geocoding. Users can post and bookmark anything that is of interest to them."
   }
 ]
