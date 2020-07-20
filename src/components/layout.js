@@ -10,6 +10,8 @@ import backgroundImage from '../images/wallpaper.jpg';
 import backgroundImage7 from '../images/wallpaper2.png';
 import './layout.css';
 
+
+
 const Layout = ({ children }) => {
   const [image, setImage] = useState('');
   useEffect( ()=>{
@@ -89,35 +91,67 @@ const Layout = ({ children }) => {
             Skills
           </h3>
         </div>      
-        <div id='skillboxContainer' 
+        {/* <div id='skillboxContainer' 
           style={{ 
             margin: '5% auto 0% auto' ,
             display: 'flex',
             justifyContent: 'center',
             width: '100%',
             flexWrap: 'wrap',
-          }}>
-            <div className='skillsContainer' style={{
-                boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-                padding: '5%',
-            }}>
-              <h4>Front-end</h4>
-              <p></p>
-            </div>
-            <div className='skillsContainer' style={{
-                boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-                padding: '5%',
-            }}>
-              <h4>Back-end</h4>
-              <p></p>
-            </div> 
-            <div className='skillsContainer' style={{
-                boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-                padding: '5%',
-            }}>
-              <h4>Other</h4>
-              <p></p>
-            </div>                       
+          }}
+        >
+          <div className='skillsContainer' style={{
+              boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
+              padding: '5%',
+            }}
+          >
+            <h4>Languages</h4>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>a
+            <p>SQL</p>
+            <p>C#</p>
+            <p>Dart</p>
+          </div>
+          <div className='skillsContainer' style={{
+              boxShadow: '10px   4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
+              padding: '5%',  
+            }}
+          >
+            <h4>Frameworks</h4>
+            <p>React</p>
+            <p>jQuery</p>
+            <p>Flutter</p>
+            <p>.NET</p>
+            <p>Gatsby</p>
+          </div> 
+          <div className='skillsContainer' style={{
+              boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
+              padding: '5%',
+            }}
+          >
+            <h4>Other</h4>
+            <p>Git</p>
+            <p>MS SQL Server</p>
+            <p>Geographic Information Systems</p>
+            <p>Visual Studio Code</p>
+          </div>                       
+        </div> */}
+
+
+        <div 
+          style={{ 
+            justifyContent: 'center',
+            display: 'flex',
+            marginTop: '5%',
+          }}
+        >
+          {skillBoxes.map( skillbox => 
+            <SkillsContainer 
+              item={skillbox}
+            />
+            )
+          }
         </div>
       </section>
         
@@ -143,6 +177,40 @@ const Layout = ({ children }) => {
         </div>           
       </section>
       {/* \v/\v/ parent div */}
+    </div>
+  )
+}
+
+const skillBoxes = [
+  {
+    headline: 'Languages',
+    skills: ['HTML','CSS','JavaScript','SQL','C#','Dart'],
+  },
+  {
+    headline: 'Frameworks',
+    skills: ['React','jQuery','Flutter','.NET','Gatsby'],
+  },
+  {
+    headline: 'Other',
+    skills: ['Git', 'MS SQL Server', 'Geographic Information Systems', 'Visual Studio Code'],
+  }
+]
+
+const SkillsContainer = (props) => {
+  return (
+    <div className='skillsContainer' style={{
+        // boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
+        // boxShadow: '0px 4px 8px gray',
+        padding: '2%',
+        // textAlign: 'center',
+        borderTop: '2px solid gray',
+        borderBottom: '2px solid gray',
+      }}
+    >
+      <h4 style={{ textAlign: 'center' }}>{props.item.headline}</h4>
+      {props.item.skills.map(item=>
+        <p style={{ textAlign: 'left', marginLeft: '30%', marginTop: '5%' }}>{item}</p>
+      )}
     </div>
   )
 }
