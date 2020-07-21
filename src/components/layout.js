@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa';
 import backgroundImage2 from '../images/galaxyDust.jpg';
 import backgroundImage3 from '../images/milkyWay.jpg';
 import backgroundImage8 from '../images/northernlights.jpg';
@@ -160,21 +161,29 @@ const Layout = ({ children }) => {
         <div 
           style={{ 
             justifyContent: 'center',
-            display: 'flex'
+            // display: 'flex'
           }}
         >
           <h3 id='contact'
             style={{ 
               justifyContent: 'center',
               padding: '1% 2%',
-              borderTop: '1px solid black',
-              borderBottom: '1px solid black', 
-              marginTop: '5%',
+              // borderTop: '1px solid black',
+              // borderBottom: '1px solid black', 
+              marginTop: '25%',
+              textAlign: 'center', 
             }}
           >
             Contact
           </h3>
+     
         </div>           
+        {/* contact icons here */}
+        <div style={{ height: 500, marginTop: '20%', justifyContent: 'space-around', display: 'flex' }}>
+          <a href='https://github.com/ofu997' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaGithub size={35} /></a>
+          <a href='mailto:ofu997@gmail.com' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaRegEnvelope size={35} /></a>
+          <a href='https://linkedin.com/in/oliverfu' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaLinkedin size={35} /></a>
+        </div>     
       </section>
       {/* \v/\v/ parent div */}
     </div>
@@ -203,8 +212,8 @@ const SkillsContainer = (props) => {
         // boxShadow: '0px 4px 8px gray',
         padding: '2%',
         // textAlign: 'center',
-        borderTop: '2px solid gray',
-        borderBottom: '2px solid gray',
+        borderTop: '2px solid goldenrod',
+        borderBottom: '2px solid goldenrod',
       }}
     >
       <h4 style={{ textAlign: 'center' }}>{props.item.headline}</h4>
