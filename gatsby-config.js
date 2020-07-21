@@ -5,8 +5,6 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -14,6 +12,8 @@ module.exports = {
         path: `./data/`,
       },      
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,7 +38,26 @@ module.exports = {
         ], // Add or remove icon sizes as desired        
       },
     },
-    'gatsby-transformer-json'
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-firestore`,
+      options: {
+        credential: require("./firebaseKey.json"),
+        types: [
+          {
+            type: 'Project',
+            collection: 'projects',
+            map: i =>  ({
+              slug: i.slug,
+              title: i.title,
+              url: i.url,
+              shortDescription: i.shortDescription,
+              description: i.description,
+            })
+          },
+        ]
+      }
+    }
   ],
 }
 

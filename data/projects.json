@@ -1,23 +1,5 @@
 [
   {
-    "title":"The Digital Curator",
-    "slug":"the-digital-curator",
-    "url":"https://thedigitalcurator.azurewebsites.net",
-    "image": "./images/digitalcuratorHomepage.png",
-    "secondImage": "./images/digitalcuratorPost.png",
-    "shortDescription":"A book-listing site and blog",
-    "description": "I was inspired to create this in order to store information that I frequently refer back to, and to list books I find interesting. This site allows contributions from logged-in users and is connected to two different databases."
-  },  
-  {
-    "title":"Hacker News Reader",
-    "slug":"hacker-news-reader",
-    "url":"https://hackernews-reader.netlify.app",
-    "image":"./images/hackernewsHomepage.png",
-    "secondImage":"./images/hackernewsSort.png",
-    "shortDescription":"Searches and sorts articles from Hacker News",
-    "description":"Searches and displays articles by pulling data from API endpoints. Also allows sorting of articles by article properties."
-  },
-  {
     "title":"Virus Visualizer",
     "slug":"virus-visualizer",
     "url":"https://virusvisualizer.netlify.app",
@@ -34,5 +16,23 @@
     "secondImage":"./images/itemlisterMap.png",
     "shortDescription":"An app for sharing and mapping moments and photos",
     "description":"This mobile app was built with Flutter and Dart and includes many user-facing capabilities, including logging in, photo storage, and geocoding. Users can post and bookmark anything that is of interest to them."
+  },
+  {
+    "title":"The Digital Curator",
+    "slug":"the-digital-curator",
+    "url":"https://thedigitalcurator.azurewebsites.net",
+    "image": "./images/digitalcuratorHomepage.png",
+    "secondImage": "./images/digitalcuratorPost.png",
+    "shortDescription":"A book-listing site and blog",
+    "description": "I was inspired to create this in order to store information that I frequently refer back to, and to list books I find interesting. This site allows contributions from logged-in users and is connected to two different databases."
+  },  
+  {
+    "title":"Hacker News Reader",
+    "slug":"hacker-news-reader",
+    "url":"https://hackernews-reader.netlify.app",
+    "image":"./images/hackernewsHomepage.png",
+    "secondImage":"./images/hackernewsSort.png",
+    "shortDescription":"Searches and sorts articles from Hacker News",
+    "description":"Searches and displays articles by pulling data from API endpoints. Also allows sorting of articles by article properties."
   }
 ]

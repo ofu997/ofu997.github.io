@@ -77,7 +77,8 @@ const Layout = ({ children }) => {
         <div 
           style={{ 
             justifyContent: 'center',
-            display: 'flex'
+            display: 'flex',
+            paddingBottom: '10%',
           }}
         >
           <h3 
@@ -87,7 +88,7 @@ const Layout = ({ children }) => {
               padding: '1% 2%',
               borderTop: '1px solid black',
               borderBottom: '1px solid black', 
-              marginTop: '50%',
+              marginTop: '15%',
             }}
           >
             Skills
@@ -99,6 +100,7 @@ const Layout = ({ children }) => {
             justifyContent: 'center',
             display: 'flex',
             marginTop: '5%',
+            paddingBottom: '10%',
             flexWrap: 'wrap',
           }}
         >
@@ -125,7 +127,7 @@ const Layout = ({ children }) => {
               padding: '1% 2%',
               borderTop: '1px solid black',
               borderBottom: '1px solid black', 
-              marginTop: '50%',
+              marginTop: '15%',
             }}
           >
             Contact
@@ -133,7 +135,7 @@ const Layout = ({ children }) => {
     
         </div>           
         {/* contact icons here */}
-        <div style={{ height: 250, width: '90%', marginTop: '20%', justifyContent: 'space-around', display: 'flex' }}>
+        <div style={{ height: 250, width: '90%', margin: '20% auto 0% auto', justifyContent: 'space-around', display: 'flex' }}>
           <a href='https://github.com/ofu997' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaGithub size={35} /></a>
           <a href='mailto:ofu997@gmail.com' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaRegEnvelope size={35} /></a>
           <a href='https://linkedin.com/in/oliverfu' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaLinkedin size={35} /></a>
