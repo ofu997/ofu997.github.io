@@ -11,8 +11,6 @@ import backgroundImage from '../images/wallpaper.jpg';
 import backgroundImage7 from '../images/wallpaper2.png';
 import './layout.css';
 
-
-
 const Layout = ({ children }) => {
   const [image, setImage] = useState('');
   useEffect( ()=>{
@@ -48,6 +46,7 @@ const Layout = ({ children }) => {
           </p>
         </section>
       </div>
+      {/* projects section */}
       <section id='projects'>
         <div 
           style={{ 
@@ -58,6 +57,7 @@ const Layout = ({ children }) => {
           <h3 
             style={{ 
               justifyContent: 'center',
+              textAlign: 'center',
               padding: '1% 2%',
               borderTop: '1px solid black',
               borderBottom: '1px solid black', 
@@ -83,68 +83,23 @@ const Layout = ({ children }) => {
           <h3 
             style={{ 
               justifyContent: 'center',
+              textAlign: 'center',
               padding: '1% 2%',
               borderTop: '1px solid black',
               borderBottom: '1px solid black', 
-              marginTop: '5%',
+              marginTop: '50%',
             }}
           >
             Skills
           </h3>
         </div>      
-        {/* <div id='skillboxContainer' 
-          style={{ 
-            margin: '5% auto 0% auto' ,
-            display: 'flex',
-            justifyContent: 'center',
-            width: '100%',
-            flexWrap: 'wrap',
-          }}
-        >
-          <div className='skillsContainer' style={{
-              boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-              padding: '5%',
-            }}
-          >
-            <h4>Languages</h4>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>a
-            <p>SQL</p>
-            <p>C#</p>
-            <p>Dart</p>
-          </div>
-          <div className='skillsContainer' style={{
-              boxShadow: '10px   4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-              padding: '5%',  
-            }}
-          >
-            <h4>Frameworks</h4>
-            <p>React</p>
-            <p>jQuery</p>
-            <p>Flutter</p>
-            <p>.NET</p>
-            <p>Gatsby</p>
-          </div> 
-          <div className='skillsContainer' style={{
-              boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-              padding: '5%',
-            }}
-          >
-            <h4>Other</h4>
-            <p>Git</p>
-            <p>MS SQL Server</p>
-            <p>Geographic Information Systems</p>
-            <p>Visual Studio Code</p>
-          </div>                       
-        </div> */}
-
 
         <div 
           style={{ 
             justifyContent: 'center',
             display: 'flex',
             marginTop: '5%',
+            flexWrap: 'wrap',
           }}
         >
           {skillBoxes.map( skillbox => 
@@ -161,25 +116,24 @@ const Layout = ({ children }) => {
         <div 
           style={{ 
             justifyContent: 'center',
-            // display: 'flex'
+            display: 'flex'
           }}
         >
           <h3 id='contact'
             style={{ 
               justifyContent: 'center',
               padding: '1% 2%',
-              // borderTop: '1px solid black',
-              // borderBottom: '1px solid black', 
-              marginTop: '25%',
-              textAlign: 'center', 
+              borderTop: '1px solid black',
+              borderBottom: '1px solid black', 
+              marginTop: '50%',
             }}
           >
             Contact
           </h3>
-     
+    
         </div>           
         {/* contact icons here */}
-        <div style={{ height: 500, marginTop: '20%', justifyContent: 'space-around', display: 'flex' }}>
+        <div style={{ height: 250, width: '90%', marginTop: '20%', justifyContent: 'space-around', display: 'flex' }}>
           <a href='https://github.com/ofu997' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaGithub size={35} /></a>
           <a href='mailto:ofu997@gmail.com' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaRegEnvelope size={35} /></a>
           <a href='https://linkedin.com/in/oliverfu' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaLinkedin size={35} /></a>

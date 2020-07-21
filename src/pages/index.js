@@ -42,8 +42,7 @@ export default () => {
         style={{ 
           display: 'flex', 
           justifyContent: 'space-around', 
-          flexWrap: 'wrap-reverse', 
-          flexDirection: 'row-reverse',
+          flexWrap: 'wrap', 
           margin: '0 auto',
           width: '100%',
         }}
