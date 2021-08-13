@@ -134,6 +134,7 @@ const Layout = ({ children }) => {
           </h3>
     
         </div>           
+        
         {/* contact icons here */}
         <div style={{ height: 250, width: '90%', margin: '20% auto 0% auto', justifyContent: 'space-around', display: 'flex' }}>
           <a href='https://github.com/ofu997' rel="noopener noreferrer" target='_blank' className='iconAnchor'><FaGithub size={35} /></a>
@@ -149,25 +150,22 @@ const Layout = ({ children }) => {
 const skillBoxes = [
   {
     headline: 'Languages',
-    skills: ['HTML','CSS','JavaScript','SQL','C#','Dart'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'SQL', 'GraphQL', 'C#', 'Dart'],
   },
   {
     headline: 'Frameworks',
-    skills: ['React','jQuery','Flutter','.NET','Gatsby'],
+    skills: ['React', 'jQuery', '.NET (MVC and WebAPI)', 'Gatsby', 'NextJS', 'RedwoodJS', 'Flutter'],
   },
   {
     headline: 'Other',
-    skills: ['Git', 'MS SQL Server', 'Geographic Information Systems', 'Visual Studio Code'],
+    skills: ['Git', 'MS SQL Server', 'MongoDB', 'Prisma ORM', 'Geographic Information Systems', 'Visual Studio Code'],
   }
 ]
 
 const SkillsContainer = (props) => {
   return (
     <div className='skillsContainer' style={{
-        // boxShadow: '10px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 30px 20px 0 rgba(0, 0, 0, 0.19)',
-        // boxShadow: '0px 4px 8px gray',
         padding: '2%',
-        // textAlign: 'center',
         borderTop: '2px solid goldenrod',
         borderBottom: '2px solid goldenrod',
       }}
