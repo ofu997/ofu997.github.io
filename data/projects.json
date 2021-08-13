@@ -1,5 +1,14 @@
 [
   {
+    "title":"Memofolio",
+    "slug":"memofolio",
+    "url":"https://github.com/ofu997/redwoodjs-instagram-clone",
+    "image": "./images/memofolio-mobile.png",
+    "secondImage":"./images/memofolio-desktop.png",
+    "shortDescription":"Fullstack ReactJS Instagram clone",
+    "description":"This website uses RedwoodJS, a fullstack React framework. I used a basic tutorial, some blogs, and StackOverflow posts to build and debug this project. Technology learned: Prisma as an ORM, GraphQL as an API, React Bootstrap, and JSON Web Tokens and bcrypt for authentication. Users can register, upload photos, and like and comment on content. An admin can regulate content."
+  },
+  {
     "title":"Virus Visualizer",
     "slug":"virus-visualizer",
     "url":"https://virusvisualizer.netlify.app",
